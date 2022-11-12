@@ -60,28 +60,6 @@ body {
   position: relative;
 }
 
-@media screen and (max-width:768px) {
-  .game {
-    width: 400px;
-    height: 500px;
-  }
-  
-  .hole{
-    flex: 1 0 50%;
-    transform: scale(0.6);
-    
-  }
-
-  .title-container h1{
-    font-size: 4rem;
-  }
-
-  #start-btn{
-    font-size: 15px;
-  }
-
-}
-
 .hole:after {
   display: block;
   background: url(svg/dirt.svg) bottom center no-repeat;
@@ -107,4 +85,26 @@ body {
 
 .hole.up .mole {
   top: 0;
+}
+
+@media screen and (max-width:768px) {
+  .game {
+    width: 400px;
+    height: 500px;
+  }
+  
+  .hole{
+    flex: 1 0 50%;
+    transform: scale(0.6);
+    
+  }
+
+  .title-container h1{
+    font-size: 4rem;
+  }
+
+  #start-btn{
+    font-size: 15px;
+  }
+
 }
